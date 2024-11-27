@@ -9,7 +9,8 @@
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve ./build/server/index.js",
     "typecheck": "tsc",
-    "setup-db": "./docker-compose.sh dev up -d"
+    "setup-dev": "./setup-dev.sh",
+    "get-docker-ip": "docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps -aqf \"name=ub-psql\")"
   },
   "dependencies": {
     "@remix-run/node": "^2.15.0",
