@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-import { ChevronRight, Globe, MessageSquare, User, Zap } from "lucide-react";
+import { ChevronRight, CloudUpload, Database, Globe, MessageSquare, Package, User, Zap } from "lucide-react";
 import { Navbar } from "~/components/navbar";
 import AnimatedGradientText from "~/components/ui/animated-gradient-text";
 import { Button } from "~/components/ui/button";
@@ -67,7 +67,7 @@ export default function Home() {
         <section id="statistics">
           <div className="relative mx-auto container">
             <div className="text-center relative mx-auto border-x border-t overflow-hidden p-2 py-8 md:p-12">
-              <h1 className="text-sm text-muted-foreground text-balance font-semibold tracking-tigh uppercase relative z-20">
+              <h1 className="text-sm text-muted-foreground text-balance font-semibold tracking-tight uppercase relative z-20">
                 Statistics
               </h1>
               <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-full w-full bg-gradient-to-r from-transparent via-background to-transparent z-10"></div>
@@ -88,7 +88,7 @@ export default function Home() {
                   0
                 </div>
                 <div className="flex items-center gap-2">
-                  <FaGithub className="h-4 w-4" />
+                  <CloudUpload className="h-4 w-4" />
                   <span>Uploads</span>
                 </div>
               </div>
@@ -103,11 +103,11 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center justify-center space-y-2 p-4">
                 <div className="text-[4rem] font-bold font-mono tracking-tight">
-                  ∞
+                  0B
                 </div>
                 <div className="flex items-center gap-2">
-                  <FaFemale className="h-4 w-4" />
-                  <span>Bitches</span>
+                  <Database className="h-4 w-4" />
+                  <span>Stored</span>
                 </div>
               </div>
             </div>
