@@ -1,5 +1,8 @@
 import { z } from "zod";
 
+// TODO: Rework this to have a base schema that the two extend from, omitting data where needed
+// TODO: as right now, when a user logs in they will get the password errors
+
 export const loginSchema = z.object({
   email: z.string().email("Invalid email address"),
   password: z
