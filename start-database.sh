@@ -51,5 +51,3 @@ docker run -d \
   -e POSTGRES_DB=uploadbytes-db \
   -p "$DB_PORT":5432 \
   docker.io/postgres && echo "Database container '$DB_CONTAINER_NAME' was successfully created"
-
-bun db:migrate

@@ -1,7 +1,0 @@
-services:
-  postgres:
-    environment:
-      - POSTGRES_USER=root
-      - POSTGRES_PASSWORD=root
-      - POSTGRES_DB=uploadbytes
-      - POSTGRES_HOST_AUTH_METHOD=trust
